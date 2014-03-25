@@ -19,8 +19,9 @@ $(document).ready(function(){
       
         content = '<a rel="fancy-gallery" href="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"></a>';     
         $(content).appendTo("#feed"); //displays each result inside feed div above.                  
-        $('#feed a').fancybox();
       });
+      
+      $('#feed a').fancybox();
     });   
   });
     
