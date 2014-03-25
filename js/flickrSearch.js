@@ -35,13 +35,6 @@ jsonFlickrApi({
                 "isfamily": 0
             },
 
-object property path: 
-
-photos.photo.farm
-photos.photo.server
-photos.photo.id
-photos.photo.secret
-
 info about creating photo url from son data: http://www.flickr.com/services/api/misc.urls.html
 
 http://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
