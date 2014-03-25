@@ -17,11 +17,12 @@ $(document).ready(function(){
     
       $.each(data.photos.photo, function(i,photo){
       
-        content = '<a href="http://www.flickr.com/photos/'+photo.owner+'/" target="_blank"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"></a>';     
+        content = '<a rel="fancy-gallery" href="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"></a>';     
         $(content).appendTo("#feed"); //displays each result inside feed div above.                  
+        $('#feed a').fancybox();
       });
     });   
-  }); 
+  });
     
 });
 
