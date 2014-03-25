@@ -17,10 +17,10 @@ $(document).ready(function(){
     
       $.each(data.photos.photo, function(i,photo){
       
-        content = '<a rel="fancy-gallery" href="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"></a>';     
+        content = '<a rel="fancy-gallery" href="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'_s.jpg"></a>';     
         $(content).appendTo("#feed"); //displays each result inside feed div above.                  
       });
-      
+
       $('#feed a').fancybox();
     });   
   });
@@ -39,7 +39,7 @@ http://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api
 
 JSON Snippet:
 
-jsonFlickrApi({
+{
     "photos": {
         "page": 1,
         "pages": 46641,
