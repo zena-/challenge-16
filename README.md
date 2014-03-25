@@ -1,7 +1,6 @@
 ---
-tags: jquery, lab
+tags: jquery, lab, WIP
 languages: js
-WIP
 ---
 
 # Flickr API
