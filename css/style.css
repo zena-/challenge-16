@@ -2,6 +2,10 @@ body {
 	margin:20px;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
 #feed {
 	margin:0;
 	padding:0;
