@@ -1,27 +1,6 @@
 $(document).ready(function(){
   
-  // Clears results on typing serach term.
-
-  $('input#keyword').focus(function(){
-    $('#feed').html('');  
-  });
-  
-  // Search flicker API
-
-  $('button#search').click(function(){
-    var keyw = $('input#keyword').val(); //retrieves keyword(s) typed.
-            
-    $.getJSON('http://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=2fd41b49fedfd589dc265350521ab539&tags='+keyw+'&jsoncallback=?',function(data){ //display JSON feed using keyword(s) typed
-    
-      console.log(data); //see if results came in...
-    
-      $.each(data.photos.photo, function(i,photo){
-      
-        content = '<a href="http://www.flickr.com/photos/'+photo.owner+'/" target="_blank"><img src="http://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg"></a>';     
-        $(content).appendTo("#feed"); //displays each result inside feed div above.                  
-      });
-    });   
-  }); 
+  //write your solution here...
     
 });
 
