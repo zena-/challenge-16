@@ -18,7 +18,7 @@ This lab asks that you write the jQuery/JavaScript neccesary to gather the users
 5. In **js/flickrSearch.js** write the code neccesary to capture the users search term upon clicking the search button an send out an AJAX request to the Flicker API. Using the provided link and API key:
 `http://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=2fd41b49fedfd589dc265350521ab539&tags='+{your_search_term_here}+'&jsoncallback=?`
 Replace the `{your_search_term_here}` for the tag URI parameter with your variable holding the users search term. It is suggested that you use jQuery's `$.getJSON()` method described here: [http://api.jquery.com/jQuery.getJSON/](http://api.jquery.com/jQuery.getJSON/)
-6. You should recieve back some JSON that looks like the following:
+6. You should receive back some JSON that looks like the following:
 ```JSON
 jsonFlickrApi({
     "photos": {
